@@ -1,0 +1,55 @@
+.mab-magic-btn {
+    position: relative;
+    z-index: 1;
+    border: 0;
+    outline: 0;
+    padding: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 10%;
+    font-weight: bold;
+  }
+  
+  .mab-magic-btn:before,
+  .mab-magic-btn:after {
+    content: "";
+    position: absolute;
+  }
+  
+  .mab-magic-btn:before {
+    background: white; 
+    z-index: -1;
+    top: .4em;
+    left: .4em;
+    right: .4em;
+    bottom: .4em;
+    
+    -webkit-transition: all .15s;
+    -moz-transition: all .15s;
+    transition: all .15s;
+  }
+  
+  .mab-magic-btn:after {
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://media.giphy.com/media/c54YHGDH63jJC/giphy.gif);
+    background-position: center;
+  }
+  
+  .mab-magic-btn:hover:before {
+    top: 0em;
+    left: 0em;
+    right: 0em;
+    bottom: 0em;
+  }
+
+  .mab-magic-btn:hover {
+    text-decoration: none !important;
+    color: black
+  }
+

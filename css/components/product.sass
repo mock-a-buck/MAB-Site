@@ -1,0 +1,77 @@
+#mab-product
+    
+    .row
+        max-width: 100% !important
+        margin: 0 auto
+        @media (min-width: 700px)
+            margin-top: 30px
+        
+        .product-img
+            text-align: center
+            .product-img-display
+                display: none 
+                transition: $hover-transition
+                animation: fadeEffect 1s
+                img
+                    max-width: 75%
+                .selected
+                    display: block
+
+                @keyframes fadeEffect
+                    from 
+                        opacity: 0
+                    to 
+                        opacity: 1
+
+
+            .selection
+                text-align: center
+                .selectors
+                    opacity: .7
+                    cursor: pointer
+                    img
+                        width: 80px
+                        margin: 5px
+                        transition: $hover-transition
+                .selected
+                    opacity: 1
+
+        .product-info
+            text-align: left
+
+            @media (max-width: 700px)
+                text-align: center
+            
+            .product-name
+                margin-top: 50px
+                font-weight: 800
+
+            .product-price
+                opacity: .8
+            
+            .product-description
+                font-weight: 300
+            
+            .mab-magic-btn
+                margin-top: .4em !important
+                cursor: pointer
+
+                @media (max-width: 400px)
+                    font-size: 80%
+
+            .tabcontent
+                display: none
+
+            .tab
+                font-size: 120%
+                span
+                    font-weight: 400
+
+                .tablinks
+                    font-weight: 300 
+                    opacity: .7
+                    cursor: pointer
+
+                .active
+                    font-weight: 400
+                    opacity: 1

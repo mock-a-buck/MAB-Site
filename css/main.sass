@@ -1,0 +1,58 @@
+// MOCK A BUCK©
+// mockabuck.com
+// Developed by: José Pablo Iglesias
+// Designed by: Rafael Aguilar & José Pablo Iglesias
+// main.sass
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600')
+$montserrat: 'Montserrat', sans-serif
+
+// Basic Colors
+$black: #000000
+$dark: #333333
+$white: #ffffff
+$light: #fafafa
+$grey: #9b9b9b
+
+// Accent Colors
+
+// Transitions
+$hover-transition: .3s ease-in-out
+$product-transition: .13s ease-in
+
+// Other
+$guideline: 1px solid red
+
+// Debug
+[debug], [debug] *:not(g):not(path) 
+    color: hsla(210, 100%, 100%, 0.9) !important
+    background: hsla(210, 100%,  50%, 0.5) !important
+    outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important
+    box-shadow: none !important
+    filter:     none !important
+
+
+// General
+body, html 
+    padding: 0
+    margin: 0
+    background-color: $white
+    font-family: $montserrat
+    color: $dark
+
+.mab-container
+    width: 90%
+    max-width: 1060px
+    margin: 0 auto
+
+// Components
+@import 'components/buttons.sass'
+@import 'components/nav.sass'
+@import 'components/gallery.sass'
+@import 'components/button-special.css'
+@import 'components/product.sass'
+@import 'components/footer.sass'
+
+// IMPORT CART
+@import 'components/cart/css/snipcart.css'

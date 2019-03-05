@@ -1,0 +1,61 @@
+#mab-header
+    width: 100%
+    text-align: center
+    padding: 50px 0
+
+    @media (max-width: 700px)
+            text-align: left !important
+
+    #mab-nav-logo
+        width: 100%
+        max-width: 200px
+
+        @media (max-width: 700px)
+            width: 100%
+
+        &:hover 
+            
+
+    #mab-nav
+        margin-top: 10px
+        list-style: none
+        padding: 0
+        
+        li
+            display: inline-block
+            margin: 5px
+            font-weight: 200
+            font-size: 110%
+            transition: $hover-transition
+            opacity: .4
+
+            &:hover 
+                opacity: 1
+
+            a
+                color: $black
+                text-decoration: none
+
+            @media (max-width: 700px)
+                font-size: 90%
+        
+        .link-active
+            opacity: 1 !important
+            font-weight: 400
+    
+    .cart-btn-container
+        text-align: center !important
+        padding-top: 15px
+
+    #cart-btn
+        font-size: 90%
+        transition: $hover-transition
+        font-weight: 300
+        cursor: pointer
+
+        img
+            width: 50px !important
+            transition: $hover-transition
+
+            &:hover
+                transform: rotate(10deg) scale(1.1)
