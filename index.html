@@ -55,7 +55,8 @@ Designed by: Rafael Aguilar & José Pablo Iglesias
         <!-- <GALLERY> -->
         <div id="mab-gallery">
             <div class="row">
-                <div class="col-md-4 col-sm-4 col-12 product" v-for="product in products">
+                <!-- PRODUCT IMAGE TEMPLATE -->
+                <div class="col-md-4 col-sm-4 col-12 product animated fadeIn" style="animation-delay: .7s" v-for="product in products">
                     <a v-bind:href="product.link" v-bind:title="product.name" class="animated fadeIn" style="animation-delay: 1s">
                         <img v-bind:src="product.img" v-bind:alt="product.name">
                     </a>
